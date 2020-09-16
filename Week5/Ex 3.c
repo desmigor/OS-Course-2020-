@@ -2,7 +2,7 @@
 #include <pthread.h>
 
 int j=0;
-char s[20];
+char s[10];
 int position;
 int bcons, bprod;
 long long int t;
@@ -33,7 +33,7 @@ while(1)
 	if(bprod)
 	continue;
 	
-	if(position==20){
+	if(position==10){
 		bcons=0;
 		bprod=1;
 		printf ("Done production with time %lld\n",t++);
@@ -49,14 +49,15 @@ return NULL;
 
 int main()
 {
-	bcons=1;
+	bcons=0;
 	
 	pthread_t tprod,tcons;
 
 	pthread_create (&tprod,NULL,produce,NULL);
 	pthread_create (&tcons,NULL,consume,NULL);
+	pthread_join(tprod,NULL);
+    pthread_join(tcons,NULL);
 	while(1);
 // stopped at 154767
 return 0;
 }
-
