@@ -1,0 +1,30 @@
+1. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ cd /
+
+2. desmigor@DESKTOP-RMUE049:/$ cd /mnt/c/Users/M.Igor/Desktop
+
+3. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop$ cd "week 1"
+
+4. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/week 1$ touch "File.txt"
+
+5. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/week 1$ cd ..
+
+6. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop$ cd "Week 10"
+
+7. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ ln /mnt/c/Users/M.Igor/Desktop/"week 1"/File.txt _ex2.txt
+
+8. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ ls -i /mnt/c/Users/M.Igor/Desktop/"week 1"/File.txt
+3940649674440586 '/mnt/c/Users/M.Igor/Desktop/week 1/File.txt'
+
+9. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ find ./ -inum  3940649674440586
+./_ex2.txt
+
+10. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ find ./ -inum  3940649674440586 -exec rm {} \;
+
+11. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ ls -iall ./
+total 0
+18858823439625616 drwxrwxrwx 1 desmigor desmigor 4096 Oct 21 17:05 .
+ 2251799814341132 drwxrwxrwx 1 desmigor desmigor 4096 Oct 21 16:54 ..
+ 7599824371581916 -rwxrwxrwx 1 desmigor desmigor  233 Oct 21 16:19 Ex1.txt
+ 7318349394871498 -rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1.txt
+ 7318349394871498 -rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_1.txt
+ 7318349394871498 -rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_2.txt

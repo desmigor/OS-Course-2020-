@@ -1,0 +1,3 @@
+ 7318349394871498 -rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1.txt
+ 7318349394871498 -rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_1.txt
+ 7318349394871498 -rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_2.txt

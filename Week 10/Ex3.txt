@@ -1,0 +1,39 @@
+1. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ chmod ugo-x _ex3.txt
+desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ ls -l
+total 4
+-rwxrwxrwx 1 desmigor desmigor  233 Oct 21 16:19 Ex1.txt
+-rwxrwxrwx 1 desmigor desmigor 1488 Oct 21 17:18 Ex2.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_1.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_2.txt
+-rw-rw-rw- 1 desmigor desmigor    0 Oct 21 17:22 _ex3.txt
+
+2. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ chmod uo+rwx _ex3.txt
+desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ ls -l
+total 4
+-rwxrwxrwx 1 desmigor desmigor  233 Oct 21 16:19 Ex1.txt
+-rwxrwxrwx 1 desmigor desmigor 1488 Oct 21 17:18 Ex2.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_1.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_2.txt
+-rwxrw-rwx 1 desmigor desmigor    0 Oct 21 17:22 _ex3.txt
+
+3. desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ chmod g+x _ex3.txt
+desmigor@DESKTOP-RMUE049:/mnt/c/Users/M.Igor/Desktop/Week 10$ ls -l
+total 4
+-rwxrwxrwx 1 desmigor desmigor  233 Oct 21 16:19 Ex1.txt
+-rwxrwxrwx 1 desmigor desmigor 1488 Oct 21 17:18 Ex2.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_1.txt
+-rwxrwxrwx 3 desmigor desmigor    0 Oct 21 16:14 _ex1_2.txt
+-rwxrwxrwx 1 desmigor desmigor    0 Oct 21 17:22 _ex3.txt
+
+What does the following permission numbers mean for file ex3.txt?
+- 660 (binary) 110 110 000 : you and group can read and write; others can't do anything (read, write, or execute)
+      -rw-rw----
+
+- 775 (binary) 111 111 101 : you and group can do anything (read, write, or execute); others can't write
+      -rwxrwxr-x
+      
+- 777 (binary) 111 111 111 : anyone can do anything (read, write, or execute)
+      -rwxrwxrwx
